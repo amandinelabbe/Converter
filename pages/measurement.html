@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/reset.css" />
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Converter</title>
+</head>
+
+<body>
+
+    <div class='light x1'></div>
+    <div class='light x2'></div>
+    <div class='light x3'></div>
+    <div class='light x4'></div>
+    <div class='light x5'></div>
+    <div class='light x6'></div>
+    <div class='light x7'></div>
+    <div class='light x8'></div>
+    <div class='light x9'></div>
+    <nav class="navbar">
+        <ul class="navbar-menu">
+            <li class="navbar-item logo">
+                <a href="index.html" class="navbar-link">
+                    <span class="navbar-title">CONVERTER</span>
+                    <i class="fa-solid fa-right-left navbar-icon"></i>
+                </a>
+            </li>
+            <li class="navbar-item">
+                <a href="currency.html" class="navbar-link">
+                    <i class="fa-solid fa-sack-dollar navbar-icon"></i>
+                    <span class="navbar-title">Currency</span>
+                </a>
+            </li>
+            <li class="navbar-item">
+                <a href="measurement.html" class="navbar-link">
+                    <i class="fa-solid fa-ruler navbar-icon"></i>
+                    <span class="navbar-title">Measurement</span>
+                </a>
+            </li>
+            <li class="navbar-item">
+                <a href="weight.html" class="navbar-link">
+                    <i class="fa-solid fa-weight-hanging navbar-icon"></i>
+                    <span class="navbar-title">Weight</span>
+                </a>
+            </li>
+            <li class="navbar-item">
+                <a href="monument.html" class="navbar-link">
+                    <i class="fa-solid fa-archway navbar-icon"></i>
+                    <span class="navbar-title">Monument</span>
+                </a>
+            </li>
+            <li class="navbar-item">
+                <a href="wacky.html" class="navbar-link">
+                    <i class="fa-sharp fa-solid fa-ghost navbar-icon"></i>
+                    <span class="navbar-title">Wacky</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="container">
+
+        <div class="title-container">
+            <h1>Convert measurement</h1>
+        </div>
+
+        <div class="form-group">
+            <div class="input">
+                <input type="number" id="valeur" placeholder="Enter a value" required>
+            </div>
+            <label for="unite-entree">From :</label>
+            <select id="unite-entree">
+                <option selected>Measurement</option>
+                <option value="km">Kilomètre (km)</option>
+                <option value="m">Mètre (m)</option>
+                <option value="dm">Décimètre (dm)</option>
+                <option value="cm">Centimètre (cm)</option>
+                <option value="mm">Millimètre (mm)</option>
+                <option value="µm">Micromètre (µm)</option>
+                <option value="nm">Nanomètre (nm)</option>
+                <option value="inch">Inch (inch)</option>
+                <option value="foot">Foot (foot)</option>
+                <option value="yd">Yard (yd)</option>
+                <option value="mile">Mile (mile)</option>
+            </select>
+        </div>
+        <div class="echanger">
+            <span onclick="echanger()"><i class="fa-solid fa-arrows-rotate"></i></span>
+        </div>
+
+        <div class="form-group">
+            <label for="unite-sortie">To :</label>
+            <select id="unite-sortie">
+                <option selected>Measurement</option>
+                <option value="km">Kilomètre (km)</option>
+                <option value="m">Mètre (m)</option>
+                <option value="dm">Décimètre (dm)</option>
+                <option value="cm">Centimètre (cm)</option>
+                <option value="mm">Millimètre (mm)</option>
+                <option value="µm">Micromètre (µm)</option>
+                <option value="nm">Nanomètre (nm)</option>
+                <option value="inch">Inch (inch)</option>
+                <option value="foot">Foot (foot)</option>
+                <option value="yd">Yard (yd)</option>
+                <option value="mile">Mile (mile)</option>
+            </select>
+        </div>
+
+        <div class="struct">
+            <button class="button" id="convertir">Convert</button>
+        </div>
+        <div class="resultat" id="resultat"></div>
+    </div>
+
+    <div class="footer">
+        <div class="social-links">
+            <a href="https://twitter.com/lbe_amandine">
+                <i class="fa-brands fa-twitter navbar-icon"></i>
+            </a>
+            <a href="https://www.instagram.com/ae_lbe/">
+                <i class="fa-brands fa-instagram navbar-icon"></i>
+            </a>
+            <a href=https://www.linkedin.com/in/amandine-labbe-22837022b>
+                <i class="fa-brands fa-linkedin-in navbar-icon"></i>
+            </a>
+            <a href="https://github.com/amandinelabbe?tab=repositories">
+                <i class="fa-brands fa-github navbar-icon"></i>
+            </a>
+            <a href="mailto:amandine17021702@gmail.com">
+                <i class="fa-solid fa-envelope navbar-icon"></i>
+            </a>
+        </div>
+    </div>
+    <script src="../scripts/script.js"></script>
+
+</body>
+
+</html>
